@@ -78,6 +78,7 @@ namespace Screen1
         }
 
         public void Stop() { _running = false; _timer.Stop(); _buffer.Clear(); }
+        public bool IsRunning() => _running;
         public void ToggleFreeze()
         {
             ManualFreeze = !ManualFreeze;
